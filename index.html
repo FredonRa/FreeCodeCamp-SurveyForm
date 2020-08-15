@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Formulario registro</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input  
+                type="text" 
+                name="nombres" 
+                id="name" 
+                class="form-control"
+                placeholder="Enter your name" 
+                required>
+            </div>
+            
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input 
+                type="email" 
+                name="correo" 
+                id="email" 
+                class="form-control"  
+                placeholder="Enter your Email"  
+                required>
+            </div>    
+                
+            <div class="form-group">   
+                <label id="number-label" for="number">Age (optional)</label>
+                <input 
+                type="number" 
+                name="edad" 
+                id="number" 
+                class="form-control" 
+                min="15" 
+                max="100"
+                placeholder="Age">
+            </div>
+
+            <div class="form-group">   
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" class="form-control" name="role"  required>  
+                    <option disabled selected>Select current role</option>
+                    <option  value="student">Student</option>
+                    <option  value="ptlearner">Part-time learner</option>
+                    <option  value="ftlearner">Full-time learner</option>
+                    <option  value="ptjob">Part-time job</option>
+                    <option  value="ftjob">Full-time job</option>
+                    <option  value="notsay">Prefer not to say</option>
+                    <option  value="other">Other</option>
+                </select>
+                <br>
+            </div>
+
+            <div class="form-group">  
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <input type="radio" id="def" name="gender" value="def">
+                <label for="def">Definitely</label><br>
+                
+                <input type="radio" id="may" name="gender" value="may">
+                <label for="may">Maybe</label><br>
+                
+                <input type="radio" id="nots" name="gender" value="nots">
+                <label for="nots">Not sure</label><br>
+            </div>
+                
+            <div class="form-group"> 
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select class="form-control" name="role" id="dropdown">  
+                    <option class="form-control" value="role" disabled selected>Select current role</option>
+                    <option  value="challenges">Challenges</option>
+                    <option  value="projects">Projects</option>
+                    <option  value="community">Community</option>
+                    <option  value="opensource">Open source</option>
+                </select>
+            </div>
+                
+            <div class="form-group">    
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox1" value="1_checkbox"> Front-end Projects<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox2" value="2_checkbox"> Back-end Projects<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox3" value="3_checkbox"> Data Visualization<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox4" value="4_checkbox"> Challenges<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox5" value="5_checkbox"> Open Source Community<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox6" value="6_checkbox"> Gitter help rooms<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox7" value="7_checkbox"> Videos<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox8" value="8_checkbox"> City Meetups<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox9" value="9_checkbox"> Wiki<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox10" value="10_checkbox"> Forum<br></label>
+                <label class="custom-checkbox"><input type="checkbox" id="cbox11" value="11_checkbox"> Additional Courses</label>
+            </div>
+            
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea class="combox" type="text" name="combox" placeholder="Enter your comment here..." maxlength = "300">
+              </textarea>
+            </div>    
+
+            <div class="form-group">
+            <input id="submit" class="botones"  type="submit" value="Register">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
